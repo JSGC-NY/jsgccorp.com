@@ -1,0 +1,48 @@
+#    .__________________________.
+#    | .___________________. |==|
+#    | | ................. | |  |
+#    | | ::[ Dear robot ]: | |  |
+#    | | ::::[ be nice ]:: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | |  |
+#    | | ::::::::::::::::: | | ,|
+#    | !___________________! |(c|
+#    !_______________________!__!
+#   /                            \
+#  /  [][][][][][][][][][][][][]  \
+# /  [][][][][][][][][][][][][][]  \
+#(  [][][][][____________][][][][]  )
+# \ ------------------------------ /
+#  \______________________________/
+
+
+# Allow specified web crawlers full access to the entire website
+User-agent: Twitterbot
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Slurp
+
+Disallow:
+
+# Allow access to specific public pages
+Allow: /about.html
+Allow: /index.html
+Allow: /sitemap.html
+Allow: /sitemap.xml
+Allow: /services.html
+Allow: /contact.html
+Allow: /testimonials.html
+Allow: /blog.html
+Allow: /newsletter.html
+
+# Disallow crawling of specific directories or files not meant for public access
+Disallow: /private/
+Disallow: /admin/
+Disallow: /confidential-docs/
+
+# Crawl delay directive (uncomment and set a value if needed)
+Crawl-delay: 10
+
+Sitemap: https://www.jsgccorp.com/sitemap.xml
